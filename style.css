@@ -1,0 +1,304 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+
+/* MEDIA QUERIES */
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px){}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px){
+
+}
+/* Landscape phones and down */
+@media (max-width: 480px){
+    .more-info div{
+        display: inline-block;
+        width: 100%;
+    }
+}
+/*Even smaller*/
+@media(max-width: 320px){}
+
+
+/* GENERAL STYLES */
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 700;
+    color:#1f2022;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+nav{
+    width: 100%;
+    text-align: center;
+}
+
+nav ul{
+    width: 100%;
+}
+
+ul li{
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+}
+
+a.home{
+    color: #e75605;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+button{
+    border: 2px solid #E75605;
+    color: #1f2022;
+    font-size: 2rem;
+    padding: 1%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* button a{
+    text-transform: uppercase;
+} */
+
+p{
+    font-size: 2rem;
+    line-height: 3rem;
+    font-family: 'Catamaran', sans-serif;
+}
+
+/* HEADER STYLES */
+
+nav ul{
+    width: 100%;
+}
+
+nav ul li{
+    text-align: center;
+    padding: 0 1%;
+    display: inline-block;
+}
+
+.header-wrapper{
+    width: 100%;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13rem;
+    width: 50%;
+    float: left;
+    color: #e75605;
+}
+
+.header-wrapper img{
+    width: 50%;
+    float: left;
+}
+
+
+.social-icons{
+    right: 0;
+    position: absolute;
+    width: 5%;
+    top: 35%;
+}
+
+.social-icons i{
+    color: #e75605;
+    font-size: 3rem;
+    display: block;
+    padding: 0;
+    margin: 20% 0;
+}
+
+
+/* SECTION STYLES */
+
+h2{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #e75605;
+    font-size: 2.5rem;
+}
+
+/* New menu and full experience sections */
+
+.new-experience img{
+    max-width: 50%;
+    /* width: 40%; */
+    display: inline-block;
+}
+
+.new-menu-wrapper{
+    clear: both;
+    width: 100%;
+}
+
+.new-menu img{
+    display: block;
+    float: left;
+}
+
+.new-menu-text{
+    max-width: 50%;
+    float: left;
+    padding: 5%;
+    /* width: 40%; */
+}
+
+.full-experience-wrapper{
+    clear: both;
+    width: 100%;
+}
+
+.full-experience-text{
+    max-width: 50%;
+    float: left;
+    padding: 5%;
+}
+
+.full-experience img{
+    display: block;
+    float: left;
+}
+
+/* Desserts section */
+
+.desserts{
+    background: #f4f4f4;
+    width: 100%;
+    padding: 5%;
+    clear: both;
+}
+
+.desserts-wrapper{
+    clear: both;
+}
+
+.desserts-text{
+    width: 60%;
+    float: left;
+    margin: 0 5%;
+}
+
+.desserts img{
+    float: left;
+    width: 30%; 
+}
+
+/* orange more-info section */
+
+.more-info{
+    background: #e75605;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10% 5%;
+}
+
+.more-info-wrapper{
+    width: 100%;
+    /* margin: 0 auto; */
+}
+
+.more-info i{
+    font-size: 4rem;
+}
+
+.locations, .menu, .reach-out{
+    display: inline-block;
+    margin: 5%;
+}
+
+p.locations, p.menu, p.reach-out{
+    font-weight: 900;
+}
+
+/* instagram section */
+
+.the-gram-wrapper{
+    padding: 2%;
+}
+
+.the-gram h2{
+    text-align: center;
+}
+
+.instagram{
+    margin: 5% 10%;
+    text-align: center;
+}
+
+.the-gram img{
+    width: 30%;
+    padding: 2%;
+
+}
+
+/* FOOTER STYLES */
+
+footer{
+    background: #f4f4f4;
+    padding-top: 2%;
+}
+
+.footer-columns-wrapper{
+    width: 100%;
+    padding: 0 5%;
+    border: 2px blue solid;
+}
+
+.contact-wrapper{
+    width: 30%;
+    float: left;
+    margin-left: 10%;
+    border: 1px red solid;
+}
+
+.stay-updated-wrapper{
+    float: left;
+    width: 50%;
+    margin-left: 10%;
+    border: 1px red solid;
+}
+
+form, .subscribe-button{
+    float: left;
+}
+
+input{
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+p.copyright{
+    background: #1f2022;
+    color: #f4f4f4;
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+    clear: both;
+    margin-bottom: 0;
+}
