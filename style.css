@@ -32,10 +32,7 @@ a{
 nav{
     width: 100%;
     text-align: center;
-}
-
-nav ul{
-    width: 100%;
+    padding-left: 0;
 }
 
 ul li{
@@ -73,8 +70,13 @@ p{
 
 /* HEADER STYLES */
 
+.hamburger-menu{
+    display: none;
+}
+
 nav ul{
     width: 100%;
+    padding: 0;
 }
 
 nav ul li{
@@ -91,7 +93,7 @@ h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 13rem;
     width: 50%;
-    float: left;
+    float: right;
     color: #e75605;
 }
 
@@ -144,7 +146,7 @@ h2{
 .new-menu-image-wrapper{
     display: block;
     float: right;
-    width: 50%;
+    max-width: 50%;
 }
 
 .new-menu-text{
@@ -168,7 +170,7 @@ h2{
 .full-experience-image-wrapper{
     display: block;
     float: left;
-    width: 50%;
+    max-width: 50%;
 }
 
 /* Desserts section */
@@ -192,7 +194,7 @@ h2{
 
 .desserts img{
     float: left;
-    width: 30%; 
+    max-width: 30%; 
 }
 
 /* orange more-info section */
@@ -209,7 +211,7 @@ h2{
 }
 
 .more-info-wrapper{
-    width: 100%;
+    max-width: 100%;
     /* margin: 0 auto; */
 }
 
@@ -324,6 +326,32 @@ p.copyright{
     }
     
     /* HEADER STYLES */
+
+    .hamburger-menu{
+        float: right;
+        display: block;
+    }
+
+    .fa-bars{
+        /* text-align: right; */
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+
+    h1{
+        /* position: absolute; */
+        font-size: 3.5rem;
+        display: block;
+        float: none;
+        clear: both;
+    }
+
+    header-wrapper img{
+        display: block;
+        float: none;
+        clear: both;
+    }
+
     header nav,
     .social-icons{
         display: none;
@@ -339,7 +367,7 @@ p.copyright{
     .new-menu,
     .new-menu-wrapper,
     .desserts-wrapper{
-        width: 100%;
+        max-width: 100%;
         clear: both;
         float: none;
     }
@@ -347,7 +375,7 @@ p.copyright{
     .new-menu-image-wrapper, 
     .full-experience-image-wrapper,
     .desserts-wrapper img{
-        width: 100%;
+        max-width: 100%;
     }
     
     .new-menu-text,
@@ -366,7 +394,7 @@ p.copyright{
 
     .instagram img:nth-child(1),
     .instagram img:nth-child(2){
-        width: 45%;
+        max-width: 45%;
     }
 
     .instagram img:nth-child(3){
@@ -378,15 +406,20 @@ p.copyright{
 
     footer nav ul{
         width: 100%;
-        margin: 0 auto;
+        /* margin: 0; */
         /* line-height: 1.5rem; */
         /* list-style: none; */
     }
 
+    footer nav ul li{
+        /* padding: 0; */
+        margin: 0;
+    }
+
     footer nav a{
         font-size: 1.5rem;
-        text-align: center;
-        margin: 0 auto;
+        /* text-align: center; */
+        /* margin: 0 auto; */
     }
 
     .footer-columns-wrapper{
@@ -398,6 +431,10 @@ p.copyright{
         clear: both;
         width: 100%;
         font-size: 1.5rem;
+    }
+
+    .contact span{
+        white-space: nowrap;
     }
 
     .contact-wrapper,
@@ -415,4 +452,8 @@ p.copyright{
         width: 100%;
     }
     
+    .copyright{
+        font-size: 1.5rem;
+    }
+
 }
