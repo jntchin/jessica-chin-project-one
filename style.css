@@ -98,7 +98,7 @@ h1{
 }
 
 .header-wrapper img{
-    width: 50%;
+    max-width: 50%;
     float: left;
 }
 
@@ -330,6 +330,7 @@ p.copyright{
     .hamburger-menu{
         float: right;
         display: block;
+        margin-right: 5%;
     }
 
     .fa-bars{
@@ -338,18 +339,34 @@ p.copyright{
         font-size: 1.5rem;
     }
 
-    h1{
-        /* position: absolute; */
-        font-size: 3.5rem;
-        display: block;
-        float: none;
+    header{
         clear: both;
     }
 
-    header-wrapper img{
-        display: block;
+    /* .header-wrapper{
+        position: relative;
         float: none;
         clear: both;
+    } */
+
+    h1{
+        position: absolute;
+        font-size: 3.5rem;
+        max-width: 100%;
+        /* top: -5%; */
+        right: 0;
+        margin-top: 10%;
+        /* float: none;
+        clear: both; */
+    }
+
+    .header-wrapper img{
+        position: relative;
+        display: block;
+        clear: both;
+        max-width: 100%;
+        width: 75%;
+        margin-top: 20%;
     }
 
     header nav,
@@ -392,6 +409,12 @@ p.copyright{
         margin: 0;
     }
 
+    .locations,
+    .menu,
+    .reach-out{
+        margin: 0;
+    }
+
     .instagram img:nth-child(1),
     .instagram img:nth-child(2){
         max-width: 45%;
@@ -406,20 +429,14 @@ p.copyright{
 
     footer nav ul{
         width: 100%;
-        /* margin: 0; */
-        /* line-height: 1.5rem; */
-        /* list-style: none; */
     }
 
     footer nav ul li{
-        /* padding: 0; */
         margin: 0;
     }
 
     footer nav a{
         font-size: 1.5rem;
-        /* text-align: center; */
-        /* margin: 0 auto; */
     }
 
     .footer-columns-wrapper{
@@ -450,6 +467,10 @@ p.copyright{
 
     form, button{
         width: 100%;
+    }
+
+    .footer-columns-wrapper{
+        margin-bottom: 15%;
     }
     
     .copyright{
