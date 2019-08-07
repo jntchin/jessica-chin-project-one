@@ -25,31 +25,37 @@
                 <h1>Hangry Tummy</h1>
             </div>
             <div class="social-icons">
-                <i class="fab fa-instagram" aria-label:"Check out our Instagram"></i>
-                <i class="fab fa-facebook-f" aria-label:"Go to our Facebook page"></i>
-                <i class="fab fa-snapchat-ghost" aria-label: "Find us on Snapchat"></i>
-                <i class="fab fa-twitter" aria-label"Follow us on Twitter"></i>
+                <i class="fab fa-instagram" aria-label:"Check out our Instagram"><a href="#"></a></i>
+                <i class="fab fa-facebook-f" aria-label:"Go to our Facebook page"><a href="#"></a></i>
+                <i class="fab fa-snapchat-ghost" aria-label: "Find us on Snapchat"><a href="#"></a></i>
+                <i class="fab fa-twitter" aria-label"Follow us on Twitter"><a href="#"></a></i>
             </div>
         </header>
         <main>
             <div class="new-experience">
                 <section class="new-menu">
                     <div class="new-menu-wrapper clearfix">
+                        <div class="new-menu-image-wrapper">
+                            <img src="assets/right-photo.jpg" alt="A bacon cheeseburger and fries on a paper-lined tray">
+                        </div>
                         <div class="new-menu-text">
                             <h2>New to our menu</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum excepturi quisquam omnis expedita dicta iste maiores optio corporis sapiente repellat delectus molestias veniam, alias facilis.</p>
                             <button><a href="#">Read More</a></button>
                         </div>
-                        <img src="assets/right-photo.jpg" alt="A bacon cheeseburger and fries on a paper-lined tray">
                     </div>
                 </section>
         
                 <section class="full-experience">
-                    <img src="assets/left-photo.jpg" alt="Three dishes of food including a salad, French onion soup, and steak frites">
-                    <div class="full-experience-text clearfix">
-                        <h2>Full experience</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum excepturi quisquam omnis expedita dicta iste maiores optio corporis sapiente repellat delectus molestias veniam, alias facilis.</p>
-                        <button><a href="#">Read More</a></button>
+                    <div class="full-experience-wrapper">
+                        <div class="full-experience-image-wrapper">
+                            <img src="assets/left-photo.jpg" alt="Three dishes of food including a salad, French onion soup, and steak frites">
+                        </div>
+                        <div class="full-experience-text clearfix">
+                            <h2>Full experience</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum excepturi quisquam omnis expedita dicta iste maiores optio corporis sapiente repellat delectus molestias veniam, alias facilis.</p>
+                            <button><a href="#">Read More</a></button>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -115,14 +121,15 @@
                             <h2>Stay Updated</h2>
                             <p>Subscribe to our newsletter to stay updated.</p>
                         </div>
-                        <div class="email-and-button">
-                            <form action="#" method="#" class="email-subscribe-form" name="email-subscribe-form">
-                                <input type="email" name="email-subscribe-form" id="email-subscribe-form" placeholder="email address">
-                                <label for="email-subscribe-form" class ="visuallyhidden"><em>Email address</em></label>
+                        <div class="email-form">
+                            <form>
+                                <input type="email" name="email" id="email" placeholder="email address">
+                                <label for="email" class="visuallyhidden">Email address</label>
                             </form>
-                            <button type="button" class="subscribe-button">Subscribe</button>
+                            <button type="submit">Subscribe</button>
                         </div>
                     </div>
+                </section>
             </div>
             </section>
             <p class="copyright">Copyright © 2019 HackerYou</p>

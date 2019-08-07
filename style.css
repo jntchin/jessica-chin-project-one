@@ -9,24 +9,10 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 .visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
 
-/* MEDIA QUERIES */
 
-/* Portrait tablet and small desktops */
-@media (max-width: 940px){}
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px){
 
-}
-/* Landscape phones and down */
-@media (max-width: 480px){
-    .more-info div{
-        display: inline-block;
-        width: 100%;
-    }
-}
-/*Even smaller*/
-@media(max-width: 320px){}
 
+/* DESKTOP CSS */
 
 /* GENERAL STYLES */
 html{
@@ -144,7 +130,8 @@ h2{
 /* New menu and full experience sections */
 
 .new-experience img{
-    max-width: 50%;
+    /* max-width: 50%; */
+    width: 100%;
     /* width: 40%; */
     display: inline-block;
 }
@@ -154,9 +141,10 @@ h2{
     width: 100%;
 }
 
-.new-menu img{
+.new-menu-image-wrapper{
     display: block;
-    float: left;
+    float: right;
+    width: 50%;
 }
 
 .new-menu-text{
@@ -177,9 +165,10 @@ h2{
     padding: 5%;
 }
 
-.full-experience img{
+.full-experience-image-wrapper{
     display: block;
     float: left;
+    width: 50%;
 }
 
 /* Desserts section */
@@ -268,25 +257,31 @@ footer{
 .footer-columns-wrapper{
     width: 100%;
     padding: 0 5%;
-    border: 2px blue solid;
+    /* border: 2px blue solid; */
 }
 
 .contact-wrapper{
-    width: 30%;
+    width: 25%;
     float: left;
     margin-left: 10%;
-    border: 1px red solid;
+    /* border: 1px red solid; */
 }
 
 .stay-updated-wrapper{
     float: left;
-    width: 50%;
+    width: 55%;
     margin-left: 10%;
-    border: 1px red solid;
+    /* border: 1px red solid; */
 }
 
-form, .subscribe-button{
+form, .email-form button{
     float: left;
+}
+
+::placeholder{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 input{
@@ -301,4 +296,123 @@ p.copyright{
     text-align: center;
     clear: both;
     margin-bottom: 0;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px){}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px){
+
+}
+/* Landscape phones and down */
+@media (max-width: 480px){
+    .more-info div{
+        display: inline-block;
+        width: 100%;
+    }
+}
+/* mobile styles */
+@media(max-width: 320px){
+
+    /* GENERAL STYLES */
+    main button{
+        width: 50%;
+    }
+    
+    /* HEADER STYLES */
+    header nav,
+    .social-icons{
+        display: none;
+    }
+
+    /* SECTION STYLES */
+
+    main{
+        width: 100%;
+    }
+
+    .new-experience,
+    .new-menu,
+    .new-menu-wrapper,
+    .desserts-wrapper{
+        width: 100%;
+        clear: both;
+        float: none;
+    }
+
+    .new-menu-image-wrapper, 
+    .full-experience-image-wrapper,
+    .desserts-wrapper img{
+        width: 100%;
+    }
+    
+    .new-menu-text,
+    .full-experience-text,
+    .desserts-text{
+        text-align: center;
+        max-width: 100%;
+        width: 100%;
+        clear: both;
+        float: none;
+    }
+
+    .desserts-text{
+        margin: 0;
+    }
+
+    .instagram img:nth-child(1),
+    .instagram img:nth-child(2){
+        width: 45%;
+    }
+
+    .instagram img:nth-child(3){
+        display: none;
+    }
+
+    /* FOOTER STYLES */
+
+
+    footer nav ul{
+        width: 100%;
+        margin: 0 auto;
+        /* line-height: 1.5rem; */
+        /* list-style: none; */
+    }
+
+    footer nav a{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .footer-columns-wrapper{
+        width: 100%;
+    }
+
+    .contact, 
+    .stay-updated{
+        clear: both;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .contact-wrapper,
+    .stay-updated-wrapper {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .email-form{
+        text-align: center;
+    }
+
+    form, button{
+        width: 100%;
+    }
+    
 }
